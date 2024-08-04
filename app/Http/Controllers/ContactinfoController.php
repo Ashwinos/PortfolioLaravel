@@ -14,7 +14,7 @@ class ContactinfoController extends Controller
 
     }
     public function contactlist(){
-        $infos = Contactinfo::all();
+        $infos = Contactinfo::get();
 
         return view('Admin.contactinfo', compact('infos'));
 

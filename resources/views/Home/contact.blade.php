@@ -1,16 +1,16 @@
 <div class="container my-12 mx-auto px-2 md:px-4">
 
-  <section class="mb-32">
+  <section class="mb-32" id="contact">
 
       <div class="flex justify-center">
         <div class="sectioner-header text-center" >
           <h1>Contact Us</h1>
           <span class="line"></span>
-          <p class="white">Here are the top reviews from some of our users. Let's take a look at these reviews. We hope these reviews give you a better understanding of what to expect. We strive to provide the best experience for our users and appreciate all the feedback we receive.</p>
+          <p  style="color: grey; font-size: 14px;" >For any type of online project please don't hesitate to get in touch with me. The fastest way is to send me your message using the following email <a class="blue no-line" style="color: #8e1efc; font-style: italic; font-weight: 300" href="#your-link">ashwinos12@yahoo.com</p>
         </div>
       </div>
 
-      <div class="flex flex-wrap">
+      <div class="flex flex-wrap" style="margin-top: 50px;">
 
           <form class="mb-12 w-full shrink-0 grow-0 basis-auto md:px-3 lg:mb-0 lg:w-5/12 lg:px-6" action="{{ route('contactinfo')}}" method="POST">
                 @csrf
@@ -142,4 +142,47 @@
 
       </div>
   </section>
+
+  
 </div>
+
+{{-- 
+    <!-- Contact -->
+    <div id="contact" class="form-1 bg-gray">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2>Contact details</h2>
+                    <span class="line"></span>
+                    <p class="p-heading"> </a></p>
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+            <div class="row">
+                <div class="col-lg-12">
+                    
+                    <!-- Contact Form -->
+                    <form id="contactForm" action="{{ route('contactinfo')}}" method="post">
+                        @csrf
+                        <div class="form-group">
+                            <input type="text" class="form-control-input" id="cname" required>
+                            <label class="label-control" name="name" for="cname">Name</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" class="form-control-input" id="cemail" required>
+                            <label class="label-control" name="email" for="cemail">Email</label>
+                        </div>
+                        <div class="form-group">
+                            <textarea class="form-control-textarea" id="cmessage" required></textarea>
+                            <label class="label-control" name="message" for="cmessage">Message</label>
+                        </div>
+                        <div class="form-group">
+                            <button type="submit" class="form-control-submit-button" style="background: #8e1efc">Submit</button>
+                        </div>
+                    </form>
+                    <!-- end of contact form -->
+
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of form-1 -->  
+    <!-- end of contact --> --}}

@@ -1,11 +1,24 @@
-<section class="testimonial section-padding" data-scroll-index='4'>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="{{ asset('css/styles.css')}}">
+  <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
+
+  
+</head>
+<body>
+
+  <section class="testimonial section-padding" data-scroll-index='4'>
     <div class="container">
       <div class="row">
         <div class="col-md-12">
           <div class="sectioner-header text-center white">
             <h1>Top Rating</h1>
             <span class="line"></span>
-            <p class="white">Here are the top reviews from some of our users. Let's take a look at these reviews. We hope these reviews give you a better understanding of what to expect. We strive to provide the best experience for our users and appreciate all the feedback we receive.</p>
+            <p class=" white   text-center" style="font-size: 14px;">Here are the top reviews from some of our users. Let's take a look at these reviews. We hope these reviews give you a better understanding of what to expect. We strive to provide the best experience for our users and appreciate all the feedback we receive.</p>
           </div>
       
         <div class="section-content">
@@ -22,7 +35,7 @@
   <div class="flex items-center mb-4">
       <img class="w-10 h-10 me-4 rounded-full" src="{{asset('images/image.png')}}" alt="">
       <div class="font-medium dark:text-white">
-          <p>{{$message->name}} <time datetime="2014-08-16 19:00" class="block text-sm text-gray-500 dark:text-gray-400">{{$message->email}}</time></p>
+          <h4>{{$message->name}} </h4><time datetime="2014-08-16 19:00" class="block text-sm text-gray-500 dark:text-gray-400">{{$message->email}}</time></h4>
       </div>
   </div>
   <div class="flex items-center mb-1 space-x-1 rtl:space-x-reverse">
@@ -48,6 +61,11 @@
   
   
 </article>
+<script src="https://cdn.tailwindcss.com"></script>
+</body>
+</html>
+
+
 
 
                 </div>

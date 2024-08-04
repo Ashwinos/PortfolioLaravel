@@ -6,7 +6,7 @@
 
 <!-- End Navbar --> 
 <!-------Banner Start------->
-@include('Home.banner')
+
 
  
 
@@ -18,11 +18,12 @@
 <!-------About End-------> 
 
 <!-------Video Start------->
-@include('Home.video')
+@include('Home.services')
 <!-------Video End-------> 
 
 <!-------Features Start------->
 @include('Home.feature')
+@include('Home.projects')
 <!-------Features End-------> 
 
 <!-------Team Start------->
@@ -38,7 +39,7 @@
 
 <!-------FAQ Start------->
 
-@include('Home.faq')
+
 <!-------FAQ End-------> 
 
 <!-------Contact Start------->
@@ -65,6 +66,7 @@
 <!-- scrollIt js --> 
 <script src="{{ asset('js/scrollIt.min.js')}}"></script> 
 <script src="{{ asset('js/wow.min.js')}}"></script> 
+<script src="{{ asset('js/script.js')}}"></script> 
 <script>
 	wow = new WOW();
 	wow.init();

@@ -5,7 +5,7 @@
           <div class="sectioner-header text-center">
             <h3>Post Your Reviews</h3>
             <span class="line"></span>
-            <p>We are grateful for the feedback from our clients and partners. Their testimonials highlight our dedication to delivering exceptional service and innovative solutions. Here’s what they have to say about their experience working with us</p>
+            <p class="text-sm text-gray-500 text-center" style="font-size: 14px;">We are grateful for the feedback from our clients and partners. Their testimonials highlight our dedication to delivering exceptional service and innovative solutions. Here’s what they have to say about their experience working with us</p>
           </div>
           <div class="section-content">
       

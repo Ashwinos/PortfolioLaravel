@@ -1,4 +1,4 @@
-<section class="download section-padding">
+{{-- <section class="download section-padding">
     <div class="container">
       <div class="row">
         <div class="col-md-12">
@@ -18,4 +18,4 @@
         </div>
       </div>
     </div>
-  </section>
+  </section> --}}
