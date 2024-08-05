@@ -1,4 +1,4 @@
-<section class="contact section-padding" data-scroll-index='6'>
+<section class="contact section-padding" data-scroll-index='6' id="review">
     <div class="container">
       <div class="row">
         <div class="col-md-12">
@@ -16,17 +16,28 @@
                   <div class="row" style="padding-bottom: 10px;">
                     <div class="col">
                       <input type="text" id="your_name" class="form-input w-100" name="name" placeholder="Name" required style='padding: 10PX;'>
+                      @if ($errors->has('name'))
+                      <span class="error-message">{{ $errors->first('name') }}</span>
+                  @endif
                     </div>
                     
                     <div class="col">
                       <input type="email" id="email" class="form-input w-100" name="email" placeholder="Email" required style='padding: 10PX;'*>
+                      @if ($errors->has('email'))
+                      <span class="error-message">{{ $errors->first('email') }}</span>
+                  @endif
                     </div>
                      
                   </div>
                   
                   <input type="text" id="subject" class="form-input w-100 P-3" name="subject" placeholder="Short Review" style='padding: 10PX;'>
-                  
+                  @if ($errors->has('subject'))
+                  <span class="error-message">{{ $errors->first('subject') }}</span>
+              @endif
                   <textarea class="form-input w-100" id="message" placeholder="Detailed Review" name="message" style="margin-top: 10px;"></textarea>
+                  @if ($errors->has('message'))
+                  <span class="error-message">{{ $errors->first('message') }}</span>
+              @endif
                   <button class="btn-grad w-100 text-uppercase" type="submit" name="button">submit</button>
                 </form>
               </div>

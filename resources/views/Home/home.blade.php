@@ -49,7 +49,7 @@
 
 <!-------Download End------->
 
-@include('Home.download')
+
 <!-------Download End------->
 
 @include('Home.footer')

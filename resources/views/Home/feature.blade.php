@@ -1,6 +1,6 @@
 
    <!-- Details -->
-	<div class="split">
+	<div class="split" id="feature">
 		<div class="area-1">
 		</div><!-- end of area-1 on same line and no space between comments to eliminate margin white space --><div class="area-2 bg-gray">
             <div class="container">    

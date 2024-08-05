@@ -83,7 +83,7 @@
     <div class="mb-4 w-20 rounded-md bg-blue-100 px-2 py-1 text-sm font-medium text-blue-700">Feature</div>
     <p class="mb-2 text-2xl">Portfolio Website</p>
     <p class="mb-6 text-gray-400">Designed and Developed a Personal Portfolio Website: Utilized Lravel to create a visually appealing and responsive website to showcase my work, skills, and projects..</p>
-    <a href="https://github.com/Ashwinos/html.git">
+    <a href="https://github.com/Ashwinos/PortfolioLaravel.git">
       <button class="flex items-center space-x-2 rounded-md border-2 border-blue-500 px-4 py-2 font-medium text-blue-600 transition hover:bg-blue-500 hover:text-white">
         Git Hub
       </button>
@@ -111,7 +111,7 @@
        </p>
     <a href="https://github.com/Ashwinos/CrudLaravel.git">
       <button class="flex items-center space-x-2 rounded-md border-2 border-blue-500 px-4 py-2 font-medium text-blue-600 transition hover:bg-blue-500 hover:text-white">
-        Git Hub
+        Git Hub 
       </button>
   </a>
     </button>

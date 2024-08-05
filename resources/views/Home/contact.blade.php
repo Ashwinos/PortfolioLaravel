@@ -6,7 +6,9 @@
         <div class="sectioner-header text-center" >
           <h1>Contact Us</h1>
           <span class="line"></span>
-          <p  style="color: grey; font-size: 14px;" >For any type of online project please don't hesitate to get in touch with me. The fastest way is to send me your message using the following email <a class="blue no-line" style="color: #8e1efc; font-style: italic; font-weight: 300" href="#your-link">ashwinos12@yahoo.com</p>
+         
+          <p  style="color: grey; font-size: 14px;" >For any type of online project please don't hesitate to get in touch with me. The fastest way is to send me your message using the following email 
+            <a href="mailto:ashwinos12@yahoo.com">ashwinos12@yahoo.com</a></p>
         </div>
       </div>
 
@@ -19,7 +21,10 @@
                           Name
                   </label>
                   <input type="text" name="name" class="px-2 py-2 border w-full outline-none rounded-md" id="exampleInput90" placeholder="Name" />
-              </div>
+                  @if ($errors->has('name'))
+                  <span class="error-message">{{ $errors->first('name') }}</span>
+              @endif
+                </div>
 
               <div class="mb-3 w-full">
                   <label class="block font-medium mb-[2px]" style="color: #8e1efc" htmlFor="exampleInput90">
@@ -27,6 +32,9 @@
                   </label>
                   <input type="email" name="email" class="px-2 py-2 border w-full outline-none rounded-md" id="exampleInput90"
                           placeholder="Enter your email address" />
+                          @if ($errors->has('email'))
+                          <span class="error-message">{{ $errors->first('email') }}</span>
+                      @endif
               </div>
 
               <div class="mb-3 w-full">
@@ -34,7 +42,10 @@
                           Message
                   </label>
                   <textarea class="px-2 py-2 border rounded-[5px] w-full outline-none" name="message" id="" placeholder="Message" ></textarea>
-              </div>
+                  @if ($errors->has('message'))
+                  <span class="error-message">{{ $errors->first('message') }}</span>
+                  @endif
+                </div>
 
               <button class="btn-grad w-100 text-uppercase" type="submit" name="button">submit</button>
 
@@ -59,38 +70,15 @@
                                   Technical support
                               </p>
                               <p class="text-neutral-500 " >
-                                  support@example.com
+                                <a style="text-decoration: none; color:grey" href="mailto:someone@example.com">osashwin12@gmail.com</a>
                               </p>
                               <p class="text-neutral-500 ">
-                                  +1 234-567-89
+                                +91 9633 573 812
                               </p>
                           </div>
                       </div>
                   </div>
-                  <div class="mb-12 w-full shrink-0 grow-0 basis-auto md:w-6/12 md:px-3 lg:px-6">
-                      <div class="flex items-start">
-                          <div class="shrink-0">
-                              <div class="inline-block rounded-md bg-teal-400-100 p-4 text-teal-700">
-                                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                      stroke-width="2" stroke="currentColor" class="h-6 w-6">
-                                      <path stroke-linecap="round" stroke-linejoin="round" color="#8e1efc"
-                                          d="M2.25 18.75a60.07 60.07 0 0115.797 2.101c.727.198 1.453-.342 1.453-1.096V18.75M3.75 4.5v.75A.75.75 0 013 6h-.75m0 0v-.375c0-.621.504-1.125 1.125-1.125H20.25M2.25 6v9m18-10.5v.75c0 .414.336.75.75.75h.75m-1.5-1.5h.375c.621 0 1.125.504 1.125 1.125v9.75c0 .621-.504 1.125-1.125 1.125h-.375m1.5-1.5H21a.75.75 0 00-.75.75v.75m0 0H3.75m0 0h-.375a1.125 1.125 0 01-1.125-1.125V15m1.5 1.5v-.75A.75.75 0 003 15h-.75M15 10.5a3 3 0 11-6 0 3 3 0 016 0zm3 0h.008v.008H18V10.5zm-12 0h.008v.008H6V10.5z" />
-                                  </svg>
-                              </div>
-                          </div>
-                          <div class="ml-6 grow" style="color: #8e1efc">
-                              <p class="mb-2 font-bold ">
-                                  Sales questions
-                              </p>
-                              <p class="text-neutral-500 ">
-                                  sales@example.com
-                              </p>
-                              <p class="text-neutral-500 ">
-                                  +1 234-567-89
-                              </p>
-                          </div>
-                      </div>
-                  </div>
+                 
                   <div class="mb-12 w-full shrink-0 grow-0 basis-auto md:w-6/12 md:px-3 lg:px-6">
                       <div class="align-start flex">
                           <div class="shrink-0">
@@ -103,40 +91,20 @@
                               </div>
                           </div>
                           <div class="ml-6 grow" style="color: #8e1efc">
-                              <p class="mb-2 font-bold ">Press</p>
+                              <p class="mb-2 font-bold "> Bug report</p>
                               <p class="text-neutral-500 ">
-                                  press@example.com
+                                <a style="text-decoration: none; color:grey" href="mailto:someone@example.com">ashwinos@yahoo.com</a>
                               </p>
                               <p class="text-neutral-500 ">
-                                  +1 234-567-89
+                                  +91 9633 573 812
                               </p>
                           </div>
                       </div>
+
+                     
                   </div>
-                  <div class="mb-12 w-full shrink-0 grow-0 basis-auto md:w-6/12 md:px-3 lg:px-6">
-                      <div class="align-start flex">
-                          <div class="shrink-0">
-                              <div class="inline-block rounded-md bg-teal-400-100 p-4 text-teal-700">
-                                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                      stroke-width="2" stroke="currentColor" class="h-6 w-6">
-                                      <path stroke-linecap="round" stroke-linejoin="round" color="#8e1efc"
-                                          d="M12 12.75c1.148 0 2.278.08 3.383.237 1.037.146 1.866.966 1.866 2.013 0 3.728-2.35 6.75-5.25 6.75S6.75 18.728 6.75 15c0-1.046.83-1.867 1.866-2.013A24.204 24.204 0 0112 12.75zm0 0c2.883 0 5.647.508 8.207 1.44a23.91 23.91 0 01-1.152 6.06M12 12.75c-2.883 0-5.647.508-8.208 1.44.125 2.104.52 4.136 1.153 6.06M12 12.75a2.25 2.25 0 002.248-2.354M12 12.75a2.25 2.25 0 01-2.248-2.354M12 8.25c.995 0 1.971-.08 2.922-.236.403-.066.74-.358.795-.762a3.778 3.778 0 00-.399-2.25M12 8.25c-.995 0-1.97-.08-2.922-.236-.402-.066-.74-.358-.795-.762a3.734 3.734 0 01.4-2.253M12 8.25a2.25 2.25 0 00-2.248 2.146M12 8.25a2.25 2.25 0 012.248 2.146M8.683 5a6.032 6.032 0 01-1.155-1.002c.07-.63.27-1.222.574-1.747m.581 2.749A3.75 3.75 0 0115.318 5m0 0c.427-.283.815-.62 1.155-.999a4.471 4.471 0 00-.575-1.752M4.921 6a24.048 24.048 0 00-.392 3.314c1.668.546 3.416.914 5.223 1.082M19.08 6c.205 1.08.337 2.187.392 3.314a23.882 23.882 0 01-5.223 1.082" />
-                                  </svg>
-                              </div>
-                          </div>
-                          <div class="ml-6 grow" style="color: #8e1efc">
-                              <p class="mb-2 font-bold">
-                                  Bug report
-                              </p>
-                              <p class="text-neutral-500 ">
-                                  bugs@example.com
-                              </p>
-                              <p class="text-neutral-500">
-                                  +1 234-567-89
-                              </p>
-                          </div>
-                      </div>
-                  </div>
+                  <img src="{{ asset('images/contact.png') }}">
+                 
               </div>
           </div>
 
@@ -146,43 +114,11 @@
   
 </div>
 
-{{-- 
-    <!-- Contact -->
-    <div id="contact" class="form-1 bg-gray">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <h2>Contact details</h2>
-                    <span class="line"></span>
-                    <p class="p-heading"> </a></p>
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-            <div class="row">
-                <div class="col-lg-12">
-                    
-                    <!-- Contact Form -->
-                    <form id="contactForm" action="{{ route('contactinfo')}}" method="post">
-                        @csrf
-                        <div class="form-group">
-                            <input type="text" class="form-control-input" id="cname" required>
-                            <label class="label-control" name="name" for="cname">Name</label>
-                        </div>
-                        <div class="form-group">
-                            <input type="email" class="form-control-input" id="cemail" required>
-                            <label class="label-control" name="email" for="cemail">Email</label>
-                        </div>
-                        <div class="form-group">
-                            <textarea class="form-control-textarea" id="cmessage" required></textarea>
-                            <label class="label-control" name="message" for="cmessage">Message</label>
-                        </div>
-                        <div class="form-group">
-                            <button type="submit" class="form-control-submit-button" style="background: #8e1efc">Submit</button>
-                        </div>
-                    </form>
-                    <!-- end of contact form -->
+<style>
+    .error-message {
+        color: red; /* Change to your desired color */
+        font-size: 0.875rem; /* Optional: Adjust font size */
+        margin-top: 0.25rem; /* Optional: Adjust spacing */
+    }
+</style>
 
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-        </div> <!-- end of container -->
-    </div> <!-- end of form-1 -->  
-    <!-- end of contact --> --}}
